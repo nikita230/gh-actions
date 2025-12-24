@@ -12,6 +12,7 @@ jobs:
       - name: Greeting
         run: echo "Hello World" 
   display:
+    needs: greet
     runs-on: ubuntu-latest
     steps:
      - name: Checking out code
