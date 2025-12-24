@@ -6,17 +6,22 @@ on:
   workflow_dispatch:
 
 jobs:
-  first-job:
+  greet:
     runs-on: ubuntu-latest
     steps:
       - name: Greeting
         run: echo "Hello World" 
-      - name: Checking out code
-        uses: actions/checkout@v4
-      - name: Displaying the code
-        run: |
+  display:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Checking out code
+       uses: actions/checkout@v4
+     - name: Displaying the code
+       run: |
             ls -ltr
             cat content.txt
+    
+          
       
 
 
