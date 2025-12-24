@@ -12,7 +12,6 @@ jobs:
       - name: Greeting
         run: echo "Hello World" 
   display:
-    needs: greet
     runs-on: ubuntu-latest
     steps:
      - name: Checking out code
@@ -21,6 +20,12 @@ jobs:
        run: |
             ls -ltr
             cat content.txt
+  info:
+     runs-on: ubunutu-latest
+     steps:
+       - name: "Information"
+         run: echo "${{ toJSON(github) }}"
+         
     
           
       
