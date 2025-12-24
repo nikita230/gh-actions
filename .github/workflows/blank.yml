@@ -21,7 +21,7 @@ jobs:
             ls -ltr
             cat content.txt
   info:
-     runs-on: ubunutu-latest
+     runs-on: ubuntu-latest
      steps:
        - name: "Information"
          run: echo "${{ toJSON(github) }}"
