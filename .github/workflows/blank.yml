@@ -10,7 +10,9 @@ jobs:
         run: echo "Hello World" 
       - name: Checking out code
         uses: actions/checkout@v4
-         sh cat "content.txt"
+      - name: Displaying the code
+        run : ls -ltr
+      
 
 
     
