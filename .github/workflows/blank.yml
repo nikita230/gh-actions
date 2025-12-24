@@ -11,7 +11,9 @@ jobs:
       - name: Checking out code
         uses: actions/checkout@v4
       - name: Displaying the code
-        run : ls -ltr
+        run: |
+            ls -ltr
+            cat content.txt
       
 
 
