@@ -8,6 +8,9 @@ jobs:
     steps:
       - name: Greeting
         run: echo "Hello World" 
+      - name: Checking out code
+        uses: actions/checkout@v4
+         sh "content.txt"
 
 
     
